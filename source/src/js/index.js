@@ -17,6 +17,3 @@ document.addEventListener("DOMContentLoaded", function () {
   const welcomeTitle = document.querySelector(".main__welcome");
   welcomeTitle.classList.add("main__welcome");
 });
-document.getElementById("toggleSidebar").addEventListener("click", function () {
-  document.querySelector(".sidebar__menu").classList.toggle("sidebar--shown");
-});
