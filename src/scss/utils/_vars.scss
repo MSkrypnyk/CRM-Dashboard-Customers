@@ -1,0 +1,22 @@
+// breakpoints
+$desktop-small: 1400px;
+$tablet: 1300px;
+$tablet-small: 992px;
+$mobile: 576px;
+
+:root {
+	--font-family: 'Poppins', sans-serif;
+	--c-primary: #b5b7c0;
+	--c-secondary: #16c098;
+	--c-dark: #292d32;
+	--c-violet:#5932ea;
+	--white: #fff;
+	--c-hover:  #ddd;
+	--c-active: #008767;
+	--c-inactive: #df0404;
+	--c-btn: #404b52;
+	--black: #000;
+	--bg-secondary: #f9fbff;
+	--bg-primary: #f5f5f5;
+	--border: 1px solid #eee;
+}

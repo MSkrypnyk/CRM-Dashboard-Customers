@@ -1,0 +1,222 @@
+.customers {
+  border-radius: 30px;
+  box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+  background: var(--white);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  min-width: 968px;
+  width: 100%;
+  @include tablet {
+    min-width: 500px;
+  }
+  @include mobile {
+    min-width: 350px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 53px;
+    margin-bottom: 40px;
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__all {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: var(--black);
+  }
+
+  &__active {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-secondary);
+  }
+
+  &__search {
+    display: flex;
+    max-width: 216px;
+    width: 100%;
+    gap: 8px;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 7px 8px;
+  }
+
+  &__search-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    background: var(--bg-secondary);
+  }
+
+  &__search-input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    color: var(--c-primary);
+    width: 100%;
+    background: inherit;
+    border: none;
+    outline: none;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  &__table td {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-dark);
+    border-bottom: var(--border);
+    padding: 20px 40px 20px 38px;
+  }
+
+  &__table th {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-primary);
+    padding-bottom: 14px;
+    padding-left: 38px;
+    border-bottom: var(--border);
+  }
+
+  &__table tbody tr:hover {
+    background-color: var(--c-hover);
+  }
+
+  &__status-active {
+    border: 1px solid var(--c-active);
+    border-radius: 4px;
+    padding: 4px 18px;
+    background: rgba(22, 192, 152, 0.38);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-active);
+  }
+
+  &__status-inactive {
+    border: 1px solid var(--c-inactive);
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-inactive);
+    background: #ffc5c5;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 0 38px;
+    @include desktop-small {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--c-primary);
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__pagination-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--c-btn);
+    padding: 6px 8px;
+    border: var(--border);
+    border-radius: 4px;
+    background: var(--bg-primary);
+    width: 25px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+  }
+  &__pagination-dots {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #000;
+    background: var(--white);
+  }
+  &__pagination-btn:hover {
+    background: var(--c-violet);
+    color: var(--white);
+  }
+
+  .btn-active {
+    background: var(--c-violet);
+    color: var(--white);
+  }
+}
+
+.customers__table th,
+.customers__table td {
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 1300px) {
+  .customers__table,
+  .customers__table thead,
+  .customers__table tbody,
+  .customers__table th,
+  .customers__table td,
+  .customers__table tr {
+    display: block;
+  }
+
+  .customers__table thead tr {
+    display: none;
+  }
+
+  .customers__table tr {
+    margin-bottom: 15px;
+  }
+
+  .customers__table td {
+    text-align: center;
+    
+  }
+
+ 
+}
